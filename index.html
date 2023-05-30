@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Message Encryption/Decryption</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+  <div class="logo">
+    <img src="Logo.png" alt="">
+  </div>
+
+  <div class="board-first">
+    <div class="text-first">
+      <textarea id="inputText" placeholder="Ingrese el texto aqui"></textarea>
+    </div>
+    <div class="footer-first">
+      <div class="alert-text">
+        <img src="Vector.png">
+        <span>solo letras minúsculas y sin acentos</span>
+      </div>
+  
+      <div class="buttons">
+        <button onclick="encrypt()">Encriptar!</button>
+        <button onclick="decrypt()" id="decryptButton">Desencriptar!</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="board-second">
+
+    <div id="Banner-first">
+      <img src="Muñeco.png">
+      <h1>Ningún mensaje fue</h1>
+      <h1>encontrado</h1>
+      <span>Ingresa el texto que desees encriptar o</span>
+      <span>desencriptar</span>
+    </div>
+
+    <div id="Banner-second">
+      <div class="text-second">
+        <textarea id="outputText" placeholder="Result" readonly></textarea>
+      </div>
+      <div class="buttons">
+        <button onclick="copy()" id="decryptButton-copy">Copiar</button>
+      </div> 
+    </div>
+  </div>
+
+  <script src="encrypter.js"></script>
+  <script src="copy.js"></script>
+</body>
+</html>
